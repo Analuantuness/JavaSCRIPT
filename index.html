@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <header>
+        <h1>Java Script</h1>
+     </header>
+     <p></p>
+<center>
+    <div class="header-buttons">
+        <button id="increase-font-size">A+</button>
+        <button id="decrease-font-size">A-</button>
+        <button id="theme-toggle">Dark/Light</button>
+        <p></p>
+    
+        <div class="filter-section">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="Acromatomia">Acromatomia</optgroup>
+                <option value="deuteranopia">Deuteranopia</optgroup>
+                <option value="protanopia">Protanopia</optgroup> 
+            </select>
+        </div></div>
+    </center>
+    
+
+    <main>
+
+        <div class="catalog">
+            <div class="catalog-item">
+                <h2>O que é JavaScript?</h2>
+                <p>JavaScript foi lançado pela Netscape em 1995 como uma linguagem de script para tornar 
+                páginas web interativas. Ele foi originalmente chamado de "LiveScript" e, mais tarde, 
+                renomeado para "JavaScript" para capitalizar o sucesso da linguagem Java na época. Desde então, 
+                JavaScript se tornou uma das linguagens mais populares e amplamente usadas na programação web.</p>
+                <p> Essa linguagem permite que os desenvolvedores criem páginas da web interativas e dinâmicas,
+                    adicionando funcionalidades como botões que respondem a cliques, formulários que 
+                    validam dados antes do envio, animações que tornam o site mais atraente e até mesmo
+                    jogos e aplicativos web complexos. Além disso, JavaScript é essencial para a comunicação 
+                    com servidores,
+                    permitindo que as páginas atualizem conteúdo sem precisar recarregar completamente. </p>
+            </div>
+            <div class="catalog-item">
+                <h2>Jogos</h2>
+                <p>Conheça jogos programados com JS, clique nas imagens abaixo para jogar:</p>
+            </div>
+        </div>
+        <p>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="Game On.png" alt="Descrição da imagem 1" class="filter-image" width="400">
+                <a href="https://analuantuness.github.io/jogodamemoria1/">Jogo da Memória</a>
+            </div>
+            <div class="image-item">
+                <img src="2.png" alt="Descrição da imagem 2" class="filter-image" width="400">
+        <a href="https://analuantuness.github.io/numerosecret">Descubra o número secreto</a>
+            </div>
+            </div>
+            <div class="image-item">
+                <img src="velha.png" alt="Descrição da imagem 3" class="filter-image" width="400">
+               <a href="https://analuantuness.github.io/velha/">Jogo da Velha</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<center>
+<footer>
+      <span>Todos os direitos reservados &copy; 2024</span>
+</footer>
+</center>
+<script>
+new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</html>

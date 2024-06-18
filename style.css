@@ -1,0 +1,126 @@
+body {
+    font-family: 'Gotic';
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    font-size: 16px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+   
+  }
+
+h1 {
+    text-align: center;
+}
+
+  #content {
+    font-size: 1em;
+  }
+  header {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header-buttons {
+    font-size: 16px;
+    background-color: #1b263b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px; /* ou outro valor conforme necessário */
+    
+}
+
+
+
+.filter-section {
+    /*o preenchimento será equivalente a 1 vez o tamanho da fonte atual*/
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+.dark-mode {
+    background-color: #000000; /* Cor de fundo para modo escuro */
+    color: #000000; /* Cor do texto para modo escuro */
+}
+
+main {
+    padding: 20px;
+}
+
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog-item {
+    background-color: #14213d;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color:#ffffff
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-item {
+    flex: 1 1 calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-image {
+    max-width: 100%;
+    border: 1px solid #14213d;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: flex;
+  }
+
+/* Estilos para diferentes filtros de daltonismo */
+.filter-image.achromatomaly {
+    filter: grayscale(100%);
+}
+
+.filter-image.deuteranomaly {
+    filter: hue-rotate(180deg);
+}
+
+.filter-image.tritanomaly {
+    filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+
+.filter-image.Acromatomia {
+    filter: sepia(100%) saturate(50%) hue-rotate(-50deg);
+}
+
+
+.filter-image.deuteranopia {
+    filter: sepia(100%) grayscale(75%) hue-rotate(45deg);
+}
+
+.filter-image.protanopia {
+    filter: sepia(35%) saturate(100%);
+}
